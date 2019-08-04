@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 9px;
+  }
+
+  @media screen and (max-width: 786px) {
+    font-size: 8px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 7px;
+  }
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 ul, ol {
   list-style: none;
 }

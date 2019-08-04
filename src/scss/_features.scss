@@ -1,0 +1,70 @@
+.features {
+  padding: 120px 0;
+  background-image: url(../img/macbook.png);
+  background-position: right 70%;
+  background-repeat: no-repeat;
+
+&__title {
+    margin-bottom: 120px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+  }
+
+  &__body {
+
+  }
+
+  &__list {
+    max-width: 500px;
+  }
+
+  &__item {
+    margin-bottom: 35px
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: $title-color;
+
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 20px;
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../img/icon1.png");
+    }
+
+    &--clock {
+      &::before {
+        background-image: url("../img/icon2.png");
+      }
+    }
+
+    &--message {
+      &::before {
+        background-image: url("../img/icon3.png");
+      }
+    }
+
+    &--file {
+      &::before {
+        background-image: url("../img/icon4.png");
+      }
+    }
+  }
+
+  &__item-description {
+    padding-left: 20px;
+    color: $text-color;
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,18 @@
+.partners {
+  padding: 60px 0 50px;
+  background-color: #f8f8f8;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+}
